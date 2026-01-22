@@ -59,6 +59,7 @@ extern void TIM3_Out_Init(void);
 extern void TIM3_Out_Freq_Generation(unsigned short freq);
 extern void TIM3_Out_Stop(void);
 extern void TIM4_Repeat_Interrupt_Enable(int en, int time);
+extern void Update_Time(int time);
 
 // i2c.c
 

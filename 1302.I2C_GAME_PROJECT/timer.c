@@ -185,3 +185,8 @@ void TIM4_Repeat_Interrupt_Enable(int en, int time)
 		Macro_Clear_Bit(TIM4->DIER, 0);
 	}
 }
+
+void Update_Time(int time)
+{
+	TIM4->ARR = TIME4_PLS_OF_1ms * time;
+}
